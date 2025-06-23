@@ -1,0 +1,18 @@
+.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: '20px';
+}
+
+.testo {
+    margin-top: '20px';
+}
+
+.testo p{
+    color: rgb(255, 136, 0);
+}
+
+.titolo{
+    margin-bottom: 15px;
+}

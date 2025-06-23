@@ -1,0 +1,198 @@
+{
+  "info": {
+    "name": "Fastify API Test",
+    "_postman_id": "abcd1234-5678-90ef-ghij-klmn12345678",
+    "description": "Collection per testare il server Fastify con Postman",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET Videogiochi",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4321/videogiochi",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4321",
+          "path": ["videogiochi"]
+        }
+      }
+    },
+    {
+      "name": "POST Videogiochi",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Halo Infinite\",\n  \"qnt\": 12,\n  \"price\": 9.90,\n  \"imgUrl\": \"\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4321/videogiochi",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4321",
+          "path": ["videogiochi"]
+        }
+      }
+    },
+    {
+      "name": "PATCH Videogiochi",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"qnt\": 20\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4321/videogiochi/{{videogiocoId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4321",
+          "path": ["videogiochi", "{{videogiocoId}}"]
+        }
+      }
+    },
+    {
+      "name": "DELETE Videogiochi",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4321/videogiochi/{{videogiocoId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4321",
+          "path": ["videogiochi", "{{videogiocoId}}"]
+        }
+      }
+    },
+    {
+      "name": "GET Ordini",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4321/ordini",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4321",
+          "path": ["ordini"]
+        }
+      }
+    },
+    {
+      "name": "POST Ordini",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"date\": \"2024-11-18T10:00:00.000Z\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4321/ordini",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4321",
+          "path": ["ordini"]
+        }
+      }
+    },
+    {
+      "name": "GET ordinivideogiochi",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4321/ordinivideogiochi",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4321",
+          "path": ["ordinivideogiochi"]
+        }
+      }
+    },
+    {
+      "name": "GET ordinivideogiochi by idVideogioco",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4321/ordinivideogiochi?idVideogioco=1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4321",
+          "path": ["ordinivideogiochi"],
+          "query": [
+            {
+              "key": "idVideogioco",
+              "value": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET ordinivideogiochi by idOrdine",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4321/ordinivideogiochi?idOrdine=1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4321",
+          "path": ["ordinivideogiochi"],
+          "query": [
+            {
+              "key": "idOrdine",
+              "value": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST ordinivideogiochi",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"idVideogioco\": \"{{videogiocoId}}\",\n  \"idOrdine\": \"{{ordineId}}\",\n  \"qnt\": \"1\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4321/ordinivideogiochi",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4321",
+          "path": ["ordinivideogiochi"]
+        }
+      }
+    }
+  ]
+}

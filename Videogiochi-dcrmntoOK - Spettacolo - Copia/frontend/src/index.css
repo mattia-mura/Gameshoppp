@@ -1,0 +1,51 @@
+:root {
+  --colore-sfondo: rgb(72, 10, 134);
+  --colore-testo: white;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: var(--colore-testo);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--colore-sfondo);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenitore generale della pagina */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Contenuto tra navbar e footer */
+.main-content {
+  flex: 1;
+  padding: 80px 20px 60px; /* spazio sopra e sotto per navbar e footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+

@@ -1,0 +1,150 @@
+.sfondoDettaglio {
+  background-color: none;
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerDettaglio {
+  position: relative;
+  background-color: rgb(141, 107, 175);
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  height: 500px;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img {
+  width: 70%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.dati {
+  width: 250px;
+  margin-right: 150px;
+  color: white;
+  text-align: left;
+}
+
+.dati h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.dati p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.carrello, .cestino {
+  position: absolute;
+  top: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.titulo{
+  color: rgb(255, 126, 0.3);
+}
+
+.carrello {
+  right: 60px;
+}
+
+.cestino {
+  right: 10px;
+}
+
+.carrello img, .cestino img {
+  width: 32px;
+  height: 32px;
+}
+
+.img img:hover {
+  transform: scale(1.05);
+}
+
+.qntCarrello {
+  margin-top: 50px;
+  position: absolute;
+  bottom: 0px;
+  right: 15%;
+  /* transform: translateX(50%); */
+  display: flex;
+  flex-direction: column; /* Cambiato per permettere al messaggio di stare sotto */
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: rebeccapurple;
+  opacity: 75%;
+  border-radius: 10px;
+  user-select: none;
+  display: inline-block;
+  padding: 10px; /* Aggiunto padding per contenere anche il messaggio */
+}
+
+.qntCarrello > div:first-child {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.counter{
+  padding: 15px;
+  background-color: rgb(255, 126, 0.3);
+  color: white;
+}
+
+.meno, .piu{
+  padding: 10px;
+}
+
+.tit{
+  margin-left: 1px;
+}
+
+.counter h3{
+  size: 110%
+}
+
+.avviso-limite {
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 4px;
+  padding: 5px 8px;
+  text-align: center;
+  color: #856404;
+  font-size: 12px;
+  margin-top: 8px; /* Spazio tra i controlli quantità e l'avviso */
+  white-space: nowrap;
+}
+
+.piu.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.link{
+  user-select: none;
+}
+
+.freccetta{
+  user-select: none;
+}

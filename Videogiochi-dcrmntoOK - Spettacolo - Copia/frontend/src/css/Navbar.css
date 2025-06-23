@@ -1,0 +1,29 @@
+/* Navbar fissa sopra */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.navbar img{
+  user-select: none;
+}
+
+/*colore link (navbar) resettato*/
+.navbar
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: rgb(141, 107, 175);
+}

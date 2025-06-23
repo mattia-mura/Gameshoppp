@@ -1,0 +1,405 @@
+        .ordiniPage {
+          min-height: 100vh;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          padding: 20px;
+        }
+
+        .sfondoOrdini {
+          max-width: 1200px;
+          margin: 0 auto;
+          background: rgba(255, 255, 255, 0.95);
+          border-radius: 20px;
+          padding: 30px;
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .freccetta {
+          cursor: pointer;
+          margin-bottom: 20px;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #f5f5f5;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+        }
+
+        .freccetta:hover {
+          background: #e0e0e0;
+          transform: scale(1.1);
+        }
+
+        .freccetta img {
+          width: 20px;
+          height: 20px;
+        }
+
+        .header-ordini {
+          text-align: center;
+          margin-bottom: 40px;
+        }
+
+        .header-ordini h1 {
+          color: #333;
+          font-size: 2.5rem;
+          margin-bottom: 10px;
+        }
+
+        .header-ordini p {
+          color: #666;
+          font-size: 1.1rem;
+        }
+
+        .loading {
+          text-align: center;
+          padding: 50px;
+          font-size: 1.2rem;
+          color: #666;
+        }
+
+        .error-message {
+          background: #ffebee;
+          color: #c62828;
+          padding: 15px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .error-message button {
+          background: #c62828;
+          color: white;
+          border: none;
+          padding: 5px 15px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .ordiniVuoti {
+          text-align: center;
+          padding: 60px 20px;
+        }
+
+        .ordiniVuoti h2 {
+          color: #333;
+          margin-bottom: 15px;
+        }
+
+        .ordiniVuoti p {
+          color: #666;
+          margin-bottom: 30px;
+          font-size: 1.1rem;
+        }
+
+        .vai-shopping {
+          background: linear-gradient(45deg, #667eea, #764ba2);
+          color: white;
+          border: none;
+          padding: 15px 30px;
+          border-radius: 50px;
+          font-size: 1.1rem;
+          cursor: pointer;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          transition: all 0.3s ease;
+        }
+
+        .vai-shopping:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .ordiniContainer {
+          display: grid;
+          gap: 20px;
+        }
+
+        .ordineCard {
+          background: white;
+          border-radius: 15px;
+          padding: 25px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+          border: 1px solid #e0e0e0;
+          transition: all 0.3s ease;
+        }
+
+        .ordineCard:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .ordineHeader {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+
+        .ordineInfo h3 {
+          color: #333;
+          margin: 0 0 5px 0;
+          font-size: 1.3rem;
+        }
+
+        .ordineData {
+          color: #666;
+          margin: 0;
+          font-size: 0.9rem;
+        }
+
+        .ordineStatus {
+          color: white;
+          padding: 8px 16px;
+          border-radius: 20px;
+          font-size: 0.9rem;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        .ordineItems {
+          margin-bottom: 20px;
+        }
+
+        .ordineItems p {
+          color: #666;
+          margin-bottom: 10px;
+        }
+
+        .itemsPreview {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+
+        .itemPreviewImg {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          border-radius: 8px;
+          border: 2px solid #f0f0f0;
+        }
+
+        .moreItems {
+          width: 50px;
+          height: 50px;
+          background: #f5f5f5;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #666;
+          font-size: 0.9rem;
+          font-weight: bold;
+        }
+
+        .ordineFooter {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top: 1px solid #e0e0e0;
+          padding-top: 20px;
+        }
+
+        .ordineTotale {
+          font-size: 1.4rem;
+          color: #333;
+        }
+
+        .ordineActions {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+
+        .dettagli-btn {
+          background: #2196f3;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 1rem;
+          transition: all 0.3s ease;
+        }
+
+        .dettagli-btn:hover {
+          background: #1976d2;
+          transform: translateY(-1px);
+        }
+
+        .status-controls {
+          display: flex;
+          gap: 8px;
+        }
+
+        .completa-btn {
+          background: #4caf50;
+          color: white;
+          border: none;
+          padding: 8px 15px;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 0.9rem;
+          transition: all 0.3s ease;
+        }
+
+        .completa-btn:hover {
+          background: #388e3c;
+        }
+
+        .annulla-btn {
+          background: #f44336;
+          color: white;
+          border: none;
+          padding: 8px 15px;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 0.9rem;
+          transition: all 0.3s ease;
+        }
+
+        .annulla-btn:hover {
+          background: #d32f2f;
+        }
+
+        .modal-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.7);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1000;
+          padding: 20px;
+        }
+
+        .modal-content {
+          background: white;
+          border-radius: 20px;
+          max-width: 600px;
+          width: 100%;
+          max-height: 80vh;
+          overflow-y: auto;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 25px 30px;
+          border-bottom: 1px solid #e0e0e0;
+        }
+
+        .modal-header h2 {
+          margin: 0;
+          color: #333;
+        }
+
+        .close-modal {
+          background: none;
+          border: none;
+          font-size: 1.5rem;
+          cursor: pointer;
+          color: #666;
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+        }
+
+        .close-modal:hover {
+          background: #f5f5f5;
+          color: #333;
+        }
+
+        .modal-body {
+          padding: 30px;
+        }
+
+        .ordine-info-dettagli {
+          margin-bottom: 30px;
+        }
+
+        .ordine-info-dettagli p {
+          margin: 10px 0;
+          font-size: 1.1rem;
+        }
+
+        .status-badge {
+          color: white;
+          padding: 5px 12px;
+          border-radius: 15px;
+          font-size: 0.9rem;
+          font-weight: bold;
+          margin-left: 10px;
+        }
+
+        .items-dettagli h3 {
+          color: #333;
+          margin-bottom: 20px;
+          font-size: 1.3rem;
+        }
+
+        .item-dettaglio {
+          display: flex;
+          gap: 20px;
+          padding: 20px;
+          background: #f9f9f9;
+          border-radius: 12px;
+          margin-bottom: 15px;
+        }
+
+        .item-dettaglio img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+
+        .item-info {
+          flex: 1;
+        }
+
+        .item-info h4 {
+          margin: 0 0 10px 0;
+          color: #333;
+          font-size: 1.1rem;
+        }
+
+        .item-info p {
+          margin: 5px 0;
+          color: #666;
+        }
+
+        @media (max-width: 768px) {
+          .ordineFooter {
+            flex-direction: column;
+            gap: 15px;
+          }
+
+          .ordineActions {
+            width: 100%;
+            justify-content: center;
+          }
+
+          .modal-content {
+            margin: 10px;
+            max-height: 90vh;
+          }
+
+          .item-dettaglio {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+        }
